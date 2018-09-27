@@ -1,0 +1,17 @@
+extends layout
+
+block content
+  form.form-signin(method='POST', action='/users/login')
+    h1.h3.mb-3.font-weight-normal.text-center Login Form
+    br
+    #form-group
+      label.sr-only Username:
+      input.form-control(name='username',type='text',placeholder='Username',value='admin')
+    br
+    #form-group
+      label.sr-only Password:
+      input.form-control(name='password',type='password',placeholder='Password',value='123')
+    br
+    input.btn.btn-lg.btn-primary.btn-block(type='submit',value='Login')
+
+

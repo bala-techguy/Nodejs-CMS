@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  h1 #{title}
+  br
+  table.table
+    thead.thead-dark
+      tr
+        th(scope='col') ID
+        th(scope='col') Name
+        th(scope='col') Email ID
+        th(scope='col') Submitted By
+        th(scope='col') Actions
+    tbody
+      each client, i in clients
+        tr
+          td #{client.id}
+          td #{client.name}
+          td #{client.email}
+          td #{client.submittedby}
+          td 
+            a.btn.btn-default(href="/clients/edit/"+client.id) Edit
+            span &nbsp &nbsp &nbsp
+            a.btn.btn-danger.delete-client(href='#',data-id=client.id) Delete

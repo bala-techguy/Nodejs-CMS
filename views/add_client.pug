@@ -1,0 +1,15 @@
+extends layout
+
+block content
+  form.form-signin(method='POST', action='/clients/add')
+    h1.h3.mb-3.font-weight-normal.text-center #{title}
+    br
+    #form-group
+      label.sr-only Name:
+      input.form-control(name='name', type='text',placeholder='Name')
+      br
+      #form-group
+      label.sr-only Email:
+      input.form-control(name='email', type='text',placeholder='Email')
+    br
+    input.btn.btn-lg.btn-primary.btn-block(type='submit',value='Submit')

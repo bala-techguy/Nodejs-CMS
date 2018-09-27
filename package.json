@@ -1,0 +1,28 @@
+{
+  "name": "nodejs-cms",
+  "version": "1.0.0",
+  "description": "A simple client managment system using nodejs and express js with Cloud Firestore as backend",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "nodejs-cms"
+  },
+  "author": "Balasubramanian Srinivasan",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.17.2",
+    "connect-flash": "^0.1.1",
+    "express": "^4.15.3",
+    "express-messages": "^1.0.1",
+    "express-session": "^1.15.3",
+    "express-validator": "^3.2.0",
+    "firebase-admin": "^6.0.0",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "pug": "^2.0.0-rc.1"
+  }
+}
